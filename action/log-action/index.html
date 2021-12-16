@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Free Web tutorials">
+  <link rel="icon" type="image/ico" href="https://img.icons8.com/color/96/000000/mouse-right-click.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>best windows</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  ></script>
+</head>
+<style type="text/css">
+	body{
+		height:100vh;
+    background: linear-gradient(-130deg,#40c4ff,#3d5afe);
+	}
+	.row1 img{
+              width: 100%;
+	}
+	@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .carousel{
+  	display:none;
+  }
+  .col{
+   height:341px;
+   }
+}
+.inpl::placeholder {
+	color:#888;
+font-weight: 400;
+font-family: 'Montserrat', sans-serif;
+}
+button{
+	margin-top:8%;
+	font-weight: 500;
+}
+.btn-sign{
+
+	margin-top:-4%;
+	font-weight: 500;
+}
+</style>
+<script type="text/javascript">
+
+</script>
+<body>
+	<div style="position: absolute; border-radius:10px; top:50%; left:50%; transform: translate(-50%,-50%);" class="container">
+<div style="box-shadow: -10px 0px 25px 5px rgba(0,0,0,0.2); width:auto;height: auto; background-size:cover; border-radius: 10px; background-image:url('image/fogg-no-comments.png'); -background-color:rgba(255,255,255,0.2) ;" class="row row1">
+	<div style="width:50%; height: auto;" class="col carousel"><img src="image/workflow.png"></div>
+	<div style="width: 50%; height: auto;" class="col">
+    <h3 id="l_here" style="color:#4527a0; font-weight:500; font-family: 'Nunito', sans-serif;text-align: center; text-transform:capitalize;">login here.</h3>
+    <h3 id="s_here"style="color:#4527a0; font-weight:500; font-family: 'Nunito', sans-serif;text-align: center; text-transform:capitalize;">Signin here.</h3>
+    <p id="forget_link" style="font-family: 'Open Sans', sans-serif; float:right; margin-right:; margin-top:;"><a style="color:#888;" href="#">Forget Password!</a></p>
+    <hr>
+<script>
+	$(document).ready(function() {
+		$("#register").hide();
+		$("#s_here").hide();
+	$('#login').on('click', function() {
+		$("#register_form").show();
+		$("#login_form").hide();
+		$("#forget_link").hide();
+		$("#register").show();
+		$("#login").hide();
+		$("#l_here").hide();
+		$("#s_here").show();
+	});
+	$("#register").on('click', function(){
+     $("#login_form").show();
+		$("#register_form").hide();
+		$("#forget_link").show();
+		$("#register").hide();
+		$("#login").show();
+		$("#l_here").show();
+		$("#s_here").hide();
+	});
+});
+</script><!--login form-->
+
+    <form action="../../" style="display:;" id="login_form" enctype="multipart/form-data">
+    <label style="color: rgba(255,255,255,0);">username</label>
+    <input class="inpl" style="color:#888;" placeholder="Enter Your Username" type="text" name="username">
+    <label style="color: rgba(255,255,255,0);">password</label>
+    <input class="inpl" style="color:#888;" placeholder="Enter Your Password" type="password" name="password">
+    <br/>
+    <button class="waves-effect waves-purple btn-small blue darken-1">login</button></form>
+<!--sign form-->
+    <form action="../../" style="display: none;" id="register_form" enctype="multipart/form-data">
+    <label style="color: rgba(255,255,255,0);">username</label>
+    <input class="inpl" style="color:#888;" placeholder="Enter Your Username" type="text" name="username"><label style="color: rgba(255,255,255,0);">mobile no.</label>
+    <input class="inpl" style="color:#888;" placeholder="Enter Your Mobile no." type="tel" name="mobile">
+    <label style="color: rgba(255,255,255,0);">password</label>
+    <input class="inpl" style="color:#888;" placeholder="Enter Your Password" type="password" name="password">
+    <br/>
+    <button class="waves-effect waves-purple btn-small blue darken-1">signin</button></form><button id="register" class="btn-sign waves-effect waves-teal btn-small light-green" style="float: right; margin-bottom:5%; font-family: 'Nunito', sans-serif;">log in</button>
+	<button id="login" class="btn-sign waves-effect waves-teal btn-small light-green" style="float: right; margin-bottom:5%; font-family: 'Nunito', sans-serif;">sign in</button></div>
+</div>
+</div>
+</body>
+</html>

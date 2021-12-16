@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+               body{
+                   /*background-color:#484018;*/
+               }
+              .main_div{
+                  position: absolute;
+                  top:50%;
+                  left:50%;
+                  transform: translate(-50%,-50%);
+                  width:70%;
+                  height:90%;
+                  border-radius:20px;
+                  background:#fff;
+                  overflow: hidden;
+                  box-shadow:0 0 50px 1px rgba(0,0,0,0.2),inset 0 0 7px 5px rgba(255,255,255,0.1);
+              }
+              .main_div0{
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  width:35%;
+                  height:100%;
+                  background:linear-gradient(0deg,#81b214,#d3de32);
+              }.div_ph{
+                  position: absolute;
+                  top:5%;
+                  left:15%;
+                  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  color:#fff;
+                  text-transform:capitalize;
+                  }.divdb{
+                      position:absolute;
+                      bottom:20%;
+                      left:15%;
+                      text-transform: capitalize;
+                      color:#fff;
+                      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  }.divb1{
+                      position:absolute;
+                      bottom:7%;
+                      left:15%;
+                      text-transform: capitalize;
+                      color:#fff;
+                      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                   }.divb2{
+                      position:absolute;
+                      bottom:7%;
+                      left:55%;
+                      text-transform: capitalize;
+                      color:#fff;
+                      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                   }.login{
+                       position:relative;
+                       top:0;
+                       left:35%;
+                       width:55%;
+                       height:100%;
+                   }.loginbtn{
+                       position:absolute;
+                       top:10%;
+                       left:11%;
+                       }.logbtn1{
+                           position: relative;
+                           background:#d3de32;
+                           border:none;
+                           padding:10px;
+                           outline:none;
+                           border-radius:24px;
+                           width:97px;
+                           color:#555;
+                           font-weight:600;
+                           transition:0.4s;
+                           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                           }.logbtn1:hover{
+                               z-index:100;
+                               box-shadow:0 0 10px 0px rgba(0,0,0,0.5);
+                           }.logbtn2{
+                           position: relative;
+                           left:-12%;
+                           background:#a2da29;
+                           border:none;
+                           padding:7px;
+                           outline:none;
+                           border-radius:24px;
+                           width:81px;
+                           color:#fff;
+                           font-weight:600;
+                           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                           }.footer{
+                               position: absolute;
+                               bottom:2%;
+                               left:11%;
+                               font-size: 11px;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               font-weight:600;
+                               color:#444;
+                           }.footer a{
+                               text-decoration:none;
+                               color:rgb(10, 138, 243);
+                           }.googlebtn{
+                               position: absolute;
+                               bottom:17%;
+                               left:11%;
+                               width:75%;
+                               height:7.5%;
+                               box-shadow: 0px 0px 1.9px 0.00002px grey;
+                               background:#fff;
+                               border-radius:5px;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               }.googleimg{
+                               position: absolute;
+                               top:50%;
+                               left:50%;
+                               transform: translate(-367%,-50%);
+                               background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB");
+                               width:25px;
+                               height:25px;
+                               background-size: cover;
+                           }.form{
+                               position: absolute;
+                               top:20%;
+                               left:11%;
+                               width:75%;
+                               height:50%;
+                               
+                           }.form button{
+                               position: absolute;
+                               bottom:0;
+                               width:100%;
+                               height:15%;
+                               outline:none;
+                               border:none;
+                               background:#a2da29;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               color:#fff;
+                               font-weight:600;
+                               border-radius:5px;
+                               font-size:14px;
+                               transition:0.2s;
+                           }.form button:hover{
+                               box-shadow:inset 0 0 17px 2px rgba(0,0,0,0.2), 0 0 10px 2px rgba(0,0,0,0.2);
+                           }.form .ul{
+                               position:absolute;
+                               bottom:25%;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               font-size:10px;
+                               font-weight:500;
+                           }.form .ul li{
+                               margin:4px 0;
+                               color:#444;
+                           }.inpass{
+                               position:absolute;
+                               bottom:55%;
+                               width:100%;
+                               height:11%;
+                           }.inpass label{
+                               position: absolute;
+                               top:0;
+                               left:0;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               color:#444;
+                               font-size:11px;
+                               font-weight:500;
+                           }.inem{
+                               position:absolute;
+                               top:18.1%;
+                               width:100%;
+                               height:11%;
+                           }.inem label{
+                               position: absolute;
+                               top:0;
+                               left:0;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               color:#444;
+                               font-size:11px;
+                               font-weight:500;
+                           }.infn{
+                               position:absolute;
+                               top:2.5%;
+                               width:45%;
+                               height:11%;
+                           }.infn label{
+                               position: absolute;
+                               top:0;
+                               left:0;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               color:#444;
+                               font-size:11px;
+                               font-weight:500;
+                           }.inln{
+                               position:absolute;
+                               top:2.5%;
+                               right:0;
+                               width:45%;
+                               height:11%;
+                           }.inln label{
+                               position: absolute;
+                               top:0;
+                               left:0;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               color:#444;
+                               font-size:11px;
+                               font-weight:500;
+                           }.imgeye{
+                               position: absolute;
+                               top:50%;
+                               right:50%;
+                               transform: translate(820%,-50%);
+                               width:24px;
+                               z-index:100;
+                           }.pc{
+                               position: fixed;
+                               top:37%;
+                               left:20%;
+                               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                               font-size:100px;
+                               transform: rotate(45deg);
+                               color:#16c79a;
+                               font-weight: 400;
+                               display: none;
+                           }
+        </style>
+    </head>
+    <body>
+        <div class="main_div">
+            <div class="main_div0">
+                <div class="div_ph">
+                    <h1 style="margin:0; font-size:14px;font-weight:600; text-transform: uppercase;">project</h1>
+                    <p style="margin:0; font-size:12px; color:rgba(255,255,255,0.7);">bonseq</p>
+                     </div>
+                     <span style="position: absolute; top:14%; left:15%; width:77%; height:2px;background:rgba(255,255,255,0.7);"></span>
+                    <div class="divdb">
+                    <h1 style="font-size:14px; margin:0; font-weight:500; text-transform: uppercase;">details</h1>
+                    <p style="font-size:12px; margin:0; text-transform: initial; color:rgba(255,255,255,0.7);">bonseq<sup>TM</sup> is a Carbon-negative landscape design, installation
+                    and maintenance service in the USA.</p>
+                    </div>
+                    <div class="divb1">
+                        <h1 style="font-size:13px; margin:0; font-weight:500; text-transform: uppercase;">designer</h1>
+                        <p style="font-size:11.5px; margin:0; text-transform: initial; color:rgba(255,255,255,0.7);">Jeroen van Eerden</p>
+                    </div>
+                    <div class="divb2">
+                        <h1 style="font-size:13px; margin:0; font-weight:500; text-transform: uppercase;">availability</h1>
+                        <p style="font-size:11.5px; margin:0; text-transform: initial; color:rgba(255,255,255,0.7);">Not available.</p>
+                    </div>
+                    <img style="position:absolute; top:50%; left:50%; transform: translate(-50%,-77%); width:61%;" src="../assets/icon/qr_code_scanner-black-48dp.svg"/>
+                    </div>
+                    <div class="login">
+                        <div class="loginbtn">
+                            <button class="logbtn1">Sign In</button><button class="logbtn2">Sign Up</button>
+                        </div>
+                        <form class="form" action="#">
+                            <div class="infn">
+                                <label>First Name</label><div style="position:absolute; left:31%;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                color:red;">*</div>
+                                <input style="position: absolute; top:47%; width:100%; height:60%; outline:none; border:none; font-size:17px; color:#777; border-bottom:1px solid #a2da29; " type="text">
+                            </div>
+                            <div class="inln">
+                                <label>Last Name</label>
+                                <input style="position: absolute; top:47%; width:100%; height:60%; outline:none; border:none; font-size:17px; color:#777; border-bottom:1px solid #a2da29; " type="text">
+                            </div>
+                            <div class="inem">
+                                <label>Email</label><div style="position:absolute; left:7%;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                color:red;">*</div>
+                                <input style="position: absolute; top:47%; width:100%; height:60%; outline:none; border:none; font-size:17px; color:#777; border-bottom:1px solid #a2da29; " type="text">
+                            </div>
+                            <div class="inpass">
+                                <label>Password</label><div style="position:absolute; left:12.1%;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                color:red;">*</div>
+                                <input style="position: absolute; top:47%; width:100%; height:60%; outline:none; border:none; font-size:17px; color:#777; border-bottom:1px solid #a2da29; " type="password" value="password">
+                            <img class="imgeye" src="../assets/icon/visibility_off-black-48dp.svg" alt="visibility">
+                            </div>
+                            <span style="position: absolute; bottom:45%; left:0; color:#ffc60b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                            font-weight:500; font-size:11px;" >Seems good, we suggest to make it stronger!</span>
+                            <div class="ul"><li style="color:#a2da29;">
+                                Contains at least One uppercare
+                            </li><li style="color:#a2da29;">
+                                Contains at least one number
+                            </li><li>
+                                Contains at least one special character
+                            </li></div>
+                            <button>Let's Go!</button>
+                        </form>
+                        <div class="googlebtn">
+                            <div class="googleimg"></div>
+                            <p style="position: absolute; top:50%; left:50%; transform: translate(-40%,-50%); text-transform: capitalize; font-size:15px; margin:0; color:#555;">sign up with google</p>
+                        </div>
+                        <footer class="footer">
+                            <p>By clicking the button above, you agree to our <a href="#">terms of use </a>and <a href="#">privacy polices.</a></p>
+                        </footer>
+                    </div>
+        </div>
+        
+        <div class="pc">Project Completed</div>
+    </body>
+  <SCRIPT language=JavaScript>
+
+    var message = "function disabled";
+
+    function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+
+    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+    document.onmousedown = rtclickcheck;
+
+    </SCRIPT>
+</html>
